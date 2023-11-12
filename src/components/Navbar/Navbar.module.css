@@ -1,0 +1,33 @@
+.navbar,
+.logo,
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  box-sizing: border-box;
+  height: 3.25rem;
+  padding: 0 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo,
+.menu {
+  height: 100%;
+}
+
+.logo {
+  font-size: 3.5rem;
+}
+
+.menu {
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 1rem;
+  margin: 0 -1rem;
+}
