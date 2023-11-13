@@ -21,8 +21,21 @@
   flex-direction: column;
 }
 
+.label {
+  position: relative;
+  font-size: 1rem;
+  color: #949494;
+}
+
 .label + .label {
   margin-top: 0.65rem;
+}
+
+.icon {
+  height: max-content;
+  position: absolute;
+  left: 1rem;
+  top: 0.79rem;
 }
 
 .input {
