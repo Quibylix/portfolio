@@ -1,11 +1,12 @@
 import { Icon } from "..";
+import { availableTechnologies } from "../../constants";
 import styles from "./Project.module.css";
 
 type ProjectProps = {
   imageUrl: string;
   name: string;
   description: string;
-  technologies: string[];
+  technologies: (keyof typeof availableTechnologies)[];
   projectUrl: string;
   codeUrl: string;
 };
@@ -18,15 +19,22 @@ export default function Project({
   projectUrl,
   codeUrl,
 }: ProjectProps) {
+  const technologiesInfo = technologies.map(
+    technology => availableTechnologies[technology]
+  );
+
   return (
     <div>
       <img className={styles.projectImage} src={imageUrl} alt="To-do App" />
       <h3 className={styles.projectName}>{name}</h3>
       <p className={styles.projectDescription}>{description}</p>
       <ul className={styles.technologies}>
-        {technologies.map(technology => (
-          <li key={technology} className={styles.technology}>
-            {technology}
+        {technologiesInfo.map(technology => (
+          <li key={technology.name} className={styles.technology}>
+            <span>
+              <Icon icon={technology.iconName} />
+            </span>
+            {technology.name}
           </li>
         ))}
       </ul>

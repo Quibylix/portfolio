@@ -14,7 +14,7 @@ export default function MyProjects() {
             name="To-do App"
             description="Manage your tasks without problems and increase your productivity."
             imageUrl="https://picsum.photos/200/300"
-            technologies={["Javascript", "HTML", "CSS", "Node.js"]}
+            technologies={["javascript", "html", "css", "nodeJS"]}
             projectUrl="#"
             codeUrl="#"
           />
@@ -24,7 +24,7 @@ export default function MyProjects() {
             name="To-do App"
             description="Manage your tasks without problems and increase your productivity."
             imageUrl="https://picsum.photos/200/300"
-            technologies={["Javascript", "HTML", "CSS", "Node.js"]}
+            technologies={["javascript", "html", "css", "nodeJS"]}
             projectUrl="#"
             codeUrl="#"
           />
