@@ -1,3 +1,4 @@
+import { Icon } from "..";
 import styles from "./Project.module.css";
 
 type ProjectProps = {
@@ -32,9 +33,15 @@ export default function Project({
       <div className={styles.buttons}>
         <a className={styles.seeProject} href={projectUrl}>
           See project
+          <span className={styles.buttonIcon}>
+            <Icon icon="web" />
+          </span>
         </a>
         <a className={styles.seeCode} href={codeUrl}>
           See code
+          <span className={styles.buttonIcon}>
+            <Icon icon="github" />
+          </span>
         </a>
       </div>
     </div>
