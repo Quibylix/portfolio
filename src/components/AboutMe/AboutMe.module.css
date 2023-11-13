@@ -1,0 +1,16 @@
+.aboutMe {
+  text-align: center;
+  padding: 0 2.4rem;
+  margin-top: 4rem;
+}
+
+.heading {
+  color: #2193b0;
+  font-size: 30px;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.content ~ .content {
+  margin-top: 0.75rem;
+}
