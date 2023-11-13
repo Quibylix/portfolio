@@ -23,7 +23,7 @@
 
 .label {
   position: relative;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #949494;
 }
 
@@ -35,18 +35,18 @@
   height: max-content;
   position: absolute;
   left: 1rem;
-  top: 0.79rem;
+  top: 0.95rem;
 }
 
 .input {
   box-sizing: border-box;
   width: 100%;
-  padding: 0.65rem 1rem 0.65rem 2.5rem;
+  padding: 0.75rem 1.2rem 0.75rem 2.7rem;
   resize: none;
   border-radius: 0.75rem;
   border: 0.15rem solid #bcbcbc;
   font-family: inherit;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   outline: none;
 }
 
@@ -56,7 +56,7 @@
 
 .send {
   display: flex;
-  padding: 0.75rem;
+  padding: 0.85rem;
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
@@ -64,6 +64,6 @@
   background: #f5b04e;
   border: none;
   font-weight: bold;
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-top: 0.9rem;
 }
