@@ -3,7 +3,7 @@ import styles from "./ContactMe.module.css";
 
 export default function ContactMe() {
   return (
-    <section className={styles.contactMe}>
+    <section id="contact-me" className={styles.contactMe}>
       <h2 className={styles.heading}>Contact me 📧</h2>
       <p className={styles.description}>
         Connect with me and let's create something extraordinary together.

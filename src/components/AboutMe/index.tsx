@@ -2,7 +2,7 @@ import styles from "./AboutMe.module.css";
 
 export default function AboutMe() {
   return (
-    <section className={styles.aboutMe}>
+    <section id="about-me" className={styles.aboutMe}>
       <h2 className={styles.heading}>About Me 👨</h2>
       <p className={styles.content}>
         Passionate web programmer from the vibrant landscapes of El Salvador.
