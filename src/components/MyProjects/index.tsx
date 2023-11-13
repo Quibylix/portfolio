@@ -1,3 +1,4 @@
+import { Project } from "..";
 import styles from "./MyProjects.module.css";
 
 export default function MyProjects() {
@@ -9,54 +10,24 @@ export default function MyProjects() {
       </p>
       <ul className={styles.projects}>
         <li>
-          <img
-            className={styles.projectImage}
-            src="https://picsum.photos/200/300"
-            alt="To-do App"
+          <Project
+            name="To-do App"
+            description="Manage your tasks without problems and increase your productivity."
+            imageUrl="https://picsum.photos/200/300"
+            technologies={["Javascript", "HTML", "CSS", "Node.js"]}
+            projectUrl="#"
+            codeUrl="#"
           />
-          <h3 className={styles.projectName}>To-do App</h3>
-          <p className={styles.projectDescription}>
-            Manage your tasks without problems and increase your productivity
-          </p>
-          <ul className={styles.technologies}>
-            <li className={styles.technology}>Javascript</li>
-            <li className={styles.technology}>HTML</li>
-            <li className={styles.technology}>CSS</li>
-            <li className={styles.technology}>Node.js</li>
-          </ul>
-          <div className={styles.buttons}>
-            <a className={styles.seeProject} href="#">
-              See project
-            </a>
-            <a className={styles.seeCode} href="#">
-              See code
-            </a>
-          </div>
         </li>
         <li>
-          <img
-            className={styles.projectImage}
-            src="https://picsum.photos/200/300"
-            alt="To-do App"
+          <Project
+            name="To-do App"
+            description="Manage your tasks without problems and increase your productivity."
+            imageUrl="https://picsum.photos/200/300"
+            technologies={["Javascript", "HTML", "CSS", "Node.js"]}
+            projectUrl="#"
+            codeUrl="#"
           />
-          <h3 className={styles.projectName}>To-do App</h3>
-          <p className={styles.projectDescription}>
-            Manage your tasks without problems and increase your productivity
-          </p>
-          <ul className={styles.technologies}>
-            <li className={styles.technology}>Javascript</li>
-            <li className={styles.technology}>HTML</li>
-            <li className={styles.technology}>CSS</li>
-            <li className={styles.technology}>Node.js</li>
-          </ul>
-          <div className={styles.buttons}>
-            <a className={styles.seeProject} href="#">
-              See project
-            </a>
-            <a className={styles.seeCode} href="#">
-              See code
-            </a>
-          </div>
         </li>
       </ul>
     </section>

@@ -3,3 +3,4 @@ export { default as Hero } from "./Hero";
 export { default as Icon } from "./Icon";
 export { default as MyProjects } from "./MyProjects";
 export { default as Navbar } from "./Navbar";
+export { default as Project } from "./Project";
