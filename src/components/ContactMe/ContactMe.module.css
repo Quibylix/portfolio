@@ -1,0 +1,56 @@
+.contactMe {
+  text-align: center;
+  padding: 0 2.4rem;
+  margin-top: 4rem;
+}
+
+.heading {
+  color: #2193b0;
+  font-size: 1.875rem;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: #4e4e4e;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label + .label {
+  margin-top: 0.65rem;
+}
+
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.65rem 1rem 0.65rem 2.5rem;
+  resize: none;
+  border-radius: 0.75rem;
+  border: 0.15rem solid #bcbcbc;
+  font-family: inherit;
+  font-size: 0.8125rem;
+  outline: none;
+}
+
+.input:focus {
+  border: 0.15rem solid #f5b04e;
+}
+
+.send {
+  display: flex;
+  padding: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.61375rem;
+  background: #f5b04e;
+  border: none;
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin-top: 0.9rem;
+}
