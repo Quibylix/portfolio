@@ -38,6 +38,10 @@
   top: 0.95rem;
 }
 
+.input:focus + .icon {
+  color: #f5b04e;
+}
+
 .input {
   box-sizing: border-box;
   width: 100%;
