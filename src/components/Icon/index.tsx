@@ -1,8 +1,9 @@
+import ArrowDownIcon from "./ArrowDownIcon";
 import LogoIcon from "./LogoIcon";
 import MenuIcon from "./MenuIcon";
 
 type IconProps = {
-  icon: "logo" | "menu";
+  icon: "logo" | "menu" | "arrowDown";
 };
 
 export default function Icon({ icon }: IconProps) {
@@ -11,5 +12,7 @@ export default function Icon({ icon }: IconProps) {
       return <LogoIcon />;
     case "menu":
       return <MenuIcon />;
+    case "arrowDown":
+      return <ArrowDownIcon />;
   }
 }

@@ -1,0 +1,56 @@
+.hero {
+  padding: 0 2rem;
+  margin-top: 3.25rem;
+  text-align: center;
+}
+
+.me {
+  display: inline-block;
+  object-fit: cover;
+  width: 13.375rem;
+  height: 13.375rem;
+  border-radius: 50%;
+}
+
+.hi,
+.name,
+.role {
+  display: block;
+}
+
+.hi {
+  font-size: 1.75rem;
+  margin-top: 0.8rem;
+}
+
+.name {
+  font-size: 2.3rem;
+  background: linear-gradient(90deg, #2193b0 -4.46%, #6dd5ed 96.78%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.25rem;
+}
+
+.role {
+  margin-top: 0.25rem;
+  font-size: 1.5rem;
+}
+
+.seeMyWork {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  display: inline-flex;
+  margin: 1.7rem auto 0;
+  padding: 0.875rem 1rem 0.875rem 1.5rem;
+  align-items: center;
+  gap: 0.375rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  background: #f5b04e;
+}
+
+.arrow {
+  font-size: 1.25rem;
+}
