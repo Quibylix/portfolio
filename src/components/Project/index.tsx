@@ -31,7 +31,7 @@ export default function Project({
       <ul className={styles.technologies}>
         {technologiesInfo.map(technology => (
           <li key={technology.name} className={styles.technology}>
-            <span>
+            <span className={styles.icon}>
               <Icon icon={technology.iconName} />
             </span>
             {technology.name}
