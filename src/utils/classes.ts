@@ -12,5 +12,6 @@ export default function classes(...data: (string | ClassToggles)[]) {
         .map(item => item[0])
         .join(" ");
     })
-    .join(" ");
+    .join(" ")
+    .trim();
 }
