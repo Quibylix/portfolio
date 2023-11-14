@@ -17,6 +17,7 @@ svg {
   src: url("/fonts/Inter/Inter-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -24,4 +25,5 @@ svg {
   src: url("/fonts/Inter/Inter-Bold.woff2") format("woff2");
   font-style: bold;
   font-weight: 700;
+  font-display: swap;
 }
