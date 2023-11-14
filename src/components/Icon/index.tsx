@@ -1,13 +1,17 @@
 import ArrowDownIcon from "./ArrowDownIcon";
 import CSSIcon from "./CSSIcon";
+import ContactIcon from "./ContactIcon";
 import EmailIcon from "./EmailIcon";
 import GithubIcon from "./GithubIcon";
 import HTMLIcon from "./HTMLIcon";
+import HomeIcon from "./HomeIcon";
+import InfoIcon from "./InfoIcon";
 import JavascriptIcon from "./JavascriptIcon";
 import LogoIcon from "./LogoIcon";
 import MenuIcon from "./MenuIcon";
 import MessageIcon from "./MessageIcon";
 import NodeJSIcon from "./NodeJSIcon";
+import ProjectIcon from "./ProjectIcon";
 import ReactIcon from "./ReactIcon";
 import SendIcon from "./SendIcon";
 import UserIcon from "./UserIcon";
@@ -28,7 +32,11 @@ type IconProps = {
     | "user"
     | "email"
     | "message"
-    | "send";
+    | "send"
+    | "home"
+    | "info"
+    | "project"
+    | "contact";
 };
 
 export default function Icon({ icon }: IconProps) {
@@ -61,5 +69,13 @@ export default function Icon({ icon }: IconProps) {
       return <MessageIcon />;
     case "send":
       return <SendIcon />;
+    case "home":
+      return <HomeIcon />;
+    case "info":
+      return <InfoIcon />;
+    case "project":
+      return <ProjectIcon />;
+    case "contact":
+      return <ContactIcon />;
   }
 }

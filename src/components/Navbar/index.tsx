@@ -24,21 +24,25 @@ export default function Navbar() {
         <li>
           <a className={styles.link} href="#">
             Home
+            <Icon icon="home" />
           </a>
         </li>
         <li>
           <a className={styles.link} href="#about-me">
             About me
+            <Icon icon="info" />
           </a>
         </li>
         <li>
           <a className={styles.link} href="#my-projects">
             My projects
+            <Icon icon="project" />
           </a>
         </li>
         <li>
           <a className={styles.link} href="#contact-me">
             Contact me
+            <Icon icon="contact" />
           </a>
         </li>
       </ul>
