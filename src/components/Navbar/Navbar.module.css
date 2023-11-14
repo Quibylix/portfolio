@@ -49,7 +49,6 @@
   background: #f7f7f7;
   box-shadow: -0.625rem 0.625rem 2.5rem 0 rgba(186, 186, 186, 0.2);
   list-style-type: none;
-  display: none;
 }
 
 .dropdownOpen {
@@ -71,4 +70,40 @@
 
 .dropdown li:first-child .link {
   background: #6dd5ed;
+}
+
+.dropdown:not(.dropdownClosing):not(.dropdownOpening) {
+  display: none;
+}
+
+.dropdownOpening {
+  animation: dropdownOpen 0.2s ease forwards;
+}
+
+.dropdownClosing {
+  animation: dropdownClose 0.2s ease forwards;
+}
+
+@keyframes dropdownOpen {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes dropdownClose {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+    display: none;
+  }
 }

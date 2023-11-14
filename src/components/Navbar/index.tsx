@@ -3,12 +3,14 @@ import { classes } from "../../utils";
 import Icon from "../Icon";
 import styles from "./Navbar.module.css";
 
-export default function Navbar() {
+function useDropdownMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [animateMenu, setAnimateMenu] = useState<"open" | "close" | "">("");
   const menuButton = useRef<HTMLButtonElement>(null);
 
   function toggleMenu() {
     setIsMenuOpen(!isMenuOpen);
+    setAnimateMenu(isMenuOpen ? "close" : "open");
   }
 
   useEffect(() => {
@@ -20,7 +22,8 @@ export default function Navbar() {
       // from happening.
       if (menuButton.current?.contains(e.target as Node)) return;
 
-      setIsMenuOpen(false);
+      setIsMenuOpen(!isMenuOpen);
+      setAnimateMenu(isMenuOpen ? "close" : "open");
     }
 
     window.addEventListener("click", closeMenu, true);
@@ -30,6 +33,18 @@ export default function Navbar() {
     };
   }, [isMenuOpen]);
 
+  return { isMenuOpen, toggleMenu, menuButton, animateMenu };
+}
+
+export default function Navbar() {
+  const { isMenuOpen, toggleMenu, menuButton, animateMenu } = useDropdownMenu();
+
+  const dropdownMenuClass = classes(styles.dropdown, {
+    [styles.dropdownOpen]: isMenuOpen,
+    [styles.dropdownClosing]: animateMenu === "close",
+    [styles.dropdownOpening]: animateMenu === "open",
+  });
+
   return (
     <nav className={styles.navbar}>
       <a href="#" className={styles.logo}>
@@ -38,11 +53,7 @@ export default function Navbar() {
       <button ref={menuButton} onClick={toggleMenu} className={styles.menu}>
         <Icon icon="menu" />
       </button>
-      <ul
-        className={classes(styles.dropdown, {
-          [styles.dropdownOpen]: isMenuOpen,
-        })}
-      >
+      <ul className={dropdownMenuClass}>
         <li>
           <a className={styles.link} href="#">
             Home
