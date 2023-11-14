@@ -14,10 +14,15 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <a href="#" className={styles.logo}>
+      <a href="#" className={styles.logo} aria-label="Home">
         <Icon icon="logo" />
       </a>
-      <button ref={menuButton} onClick={toggleMenu} className={styles.menu}>
+      <button
+        ref={menuButton}
+        onClick={toggleMenu}
+        className={styles.menu}
+        aria-label="Menu"
+      >
         <Icon icon="menu" />
       </button>
       <ul className={dropdownMenuClass}>
