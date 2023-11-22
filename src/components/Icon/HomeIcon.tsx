@@ -8,7 +8,7 @@ export default function HomeIcon() {
     >
       <path
         d="M0 15.2V5.59999L6 0.799988L12 5.59999V15.2H7.5V9.59999H4.5V15.2H0Z"
-        fill="black"
+        fill="currentColor"
       />
     </svg>
   );

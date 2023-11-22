@@ -13,7 +13,7 @@
 }
 
 .projectDescription {
-  color: #4e4e4e;
+  color: #cccccc;
   margin-bottom: 0.5rem;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .seeCode {
-  border: 0.1rem solid #000;
+  background: #fff;
 }
 
 .buttonIcon {

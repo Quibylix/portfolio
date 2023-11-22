@@ -6,14 +6,14 @@
 }
 
 .heading {
-  color: #2193b0;
+  color: #6dd5ed;
   font-size: 1.875rem;
   line-height: normal;
   margin-bottom: 0.5rem;
 }
 
 .description {
-  color: #4e4e4e;
+  color: #cccccc;
   margin-bottom: 1.5rem;
 }
 
@@ -49,10 +49,16 @@
   padding: 0.75rem 1.2rem 0.75rem 2.7rem;
   resize: none;
   border-radius: 0.75rem;
+  background: inherit;
+  color: #fff;
   border: 0.15rem solid #bcbcbc;
   font-family: inherit;
   font-size: 1rem;
   outline: none;
+}
+
+.input::placeholder {
+  color: #959595;
 }
 
 .input:focus {

@@ -8,6 +8,12 @@ html {
   scroll-behavior: smooth;
 }
 
+#root {
+  background-color: #202537;
+  color: #fff;
+  padding: 6.5rem 0 2rem;
+}
+
 svg {
   display: block;
 }
