@@ -9,17 +9,19 @@ export default function Hero() {
         src="https://gravatar.com/avatar/00000000000000000000000000000000?size=200"
         alt="Me"
       />
-      <h1>
-        <span className={styles.hi}>Hi 👋, I'm</span>
-        <span className={styles.name}>Fredi Barraza</span>
-        <span className={styles.role}>Web Developer 💻</span>
-      </h1>
-      <a href="#my-projects" className={styles.seeMyWork}>
-        See my work
-        <span className={styles.arrow}>
-          <Icon icon="arrowDown" />
-        </span>
-      </a>
+      <div>
+        <h1>
+          <span className={styles.hi}>Hi 👋, I'm</span>
+          <span className={styles.name}>Fredi Barraza</span>
+          <span className={styles.role}>Web Developer 💻</span>
+        </h1>
+        <a href="#my-projects" className={styles.seeMyWork}>
+          See my work
+          <span className={styles.arrow}>
+            <Icon icon="arrowDown" />
+          </span>
+        </a>
+      </div>
     </div>
   );
 }

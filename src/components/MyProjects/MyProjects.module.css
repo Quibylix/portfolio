@@ -1,8 +1,11 @@
 .myProjects {
   scroll-margin-top: 3.75rem;
   text-align: center;
+  max-width: 50rem;
+  box-sizing: border-box;
+  max-width: 50rem;
   padding: 0 2.4rem;
-  margin-top: 4rem;
+  margin: 4rem auto;
 }
 
 .heading {

@@ -1,4 +1,5 @@
 .hero {
+  box-sizing: border-box;
   padding: 0 2rem;
   text-align: center;
 }
@@ -52,4 +53,36 @@
 
 .arrow {
   font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    display: flex;
+    max-width: 50rem;
+    gap: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.4rem;
+    margin: auto;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  .me {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .hi {
+    font-size: 2.1rem;
+    margin: 0;
+  }
+
+  .name {
+    font-size: 3.2rem;
+  }
+
+  .role {
+    font-size: 2rem;
+  }
 }
