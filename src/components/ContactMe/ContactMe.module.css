@@ -22,7 +22,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 35rem;
+  max-width: 35rem;
   margin: 0 auto;
 }
 
