@@ -80,11 +80,21 @@
   font-size: 1rem;
   font-weight: bold;
   border-radius: 0.875rem;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.link:hover {
+  background: #2193b050;
+  color: #fff;
 }
 
 .dropdown li:first-child .link {
   background: #2193b0;
   color: #fff;
+}
+
+.dropdown li:first-child .link:hover {
+  background: #117f9b;
 }
 
 .dropdown:not(.dropdownClosing):not(.dropdownOpening) {
@@ -128,7 +138,7 @@
     position: static;
     flex-direction: row;
     align-items: center;
-    gap: 0.1rem;
+    gap: 0.5rem;
     padding: 0;
     background: none;
     backdrop-filter: none;

@@ -41,6 +41,7 @@
   position: absolute;
   left: 1rem;
   top: 0.95rem;
+  transition: color 0.15s ease-in-out;
 }
 
 .input:focus + .icon {
@@ -59,6 +60,7 @@
   font-family: inherit;
   font-size: 1rem;
   outline: none;
+  transition: border-color 0.15s ease-in-out;
 }
 
 .input::placeholder {
@@ -81,4 +83,10 @@
   font-weight: bold;
   font-size: 1rem;
   margin-top: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.send:hover {
+  background: #ce9039;
 }

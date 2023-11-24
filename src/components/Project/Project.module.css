@@ -61,14 +61,23 @@
   font-weight: bold;
   color: #000;
   text-decoration: none;
+  transition: background-color 0.15s ease-in-out;
 }
 
 .seeProject {
   background: #f5b04e;
 }
 
+.seeProject:hover {
+  background: #ce9039;
+}
+
 .seeCode {
   background: #fff;
+}
+
+.seeCode:hover {
+  background: #e6e6e6;
 }
 
 .buttonIcon {
