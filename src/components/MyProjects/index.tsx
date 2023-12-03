@@ -1,4 +1,5 @@
 import { Project } from "..";
+import { projects } from "../../constants";
 import styles from "./MyProjects.module.css";
 
 export default function MyProjects() {
@@ -9,26 +10,11 @@ export default function MyProjects() {
         Here are some projects I have worked on:
       </p>
       <ul className={styles.projects}>
-        <li>
-          <Project
-            name="To-do App"
-            description="Manage your tasks without problems and increase your productivity."
-            imageUrl="https://picsum.photos/200/300"
-            technologies={["javascript", "html", "css", "nodeJS"]}
-            projectUrl="#"
-            codeUrl="#"
-          />
-        </li>
-        <li>
-          <Project
-            name="To-do App"
-            description="Manage your tasks without problems and increase your productivity."
-            imageUrl="https://picsum.photos/200/300"
-            technologies={["javascript", "html", "css", "nodeJS"]}
-            projectUrl="#"
-            codeUrl="#"
-          />
-        </li>
+        {projects.map(project => (
+          <li key={project.name}>
+            <Project {...project} />
+          </li>
+        ))}
       </ul>
     </section>
   );
