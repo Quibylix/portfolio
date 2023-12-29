@@ -86,30 +86,11 @@
 
 @media (min-width: 768px) {
   .project {
-    display: flex;
     gap: 2rem;
-    align-items: center;
-    margin: 0 auto;
   }
 
   .projectImage {
-    width: 16rem;
-    aspect-ratio: 4 / 3;
-    margin-bottom: 0;
-  }
-
-  .projectName,
-  .projectDescription {
-    text-align: left;
-  }
-
-  .technologies,
-  .buttons {
-    justify-content: flex-start;
-  }
-
-  .buttons {
-    margin-top: 1.26rem;
-    gap: 1rem;
+    width: 35rem;
+    max-width: 35rem;
   }
 }
