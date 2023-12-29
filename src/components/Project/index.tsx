@@ -40,13 +40,23 @@ export default function Project({
           ))}
         </ul>
         <div className={styles.buttons}>
-          <a className={styles.seeProject} href={projectUrl}>
+          <a
+            className={styles.seeProject}
+            href={projectUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             See project
             <span className={styles.buttonIcon}>
               <Icon icon="web" />
             </span>
           </a>
-          <a className={styles.seeCode} href={codeUrl}>
+          <a
+            className={styles.seeCode}
+            href={codeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             See code
             <span className={styles.buttonIcon}>
               <Icon icon="github" />
