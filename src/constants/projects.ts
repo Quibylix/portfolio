@@ -13,6 +13,14 @@ type Project = {
 
 const projects: Project[] = [
   {
+    name: "Tetris",
+    description: "The classic game that never gets old. Play it now! 🎮",
+    imageUrl: "/images/projects/tetris.png",
+    technologies: ["react", "javascript", "html", "css"],
+    projectUrl: "https://tetris-mocha-rho.vercel.app",
+    codeUrl: "https://github.com/quibylix/tetris",
+  },
+  {
     name: "To-do App",
     description:
       "Manage your tasks without problems and increase your productivity.",
