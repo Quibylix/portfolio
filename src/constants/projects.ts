@@ -33,10 +33,10 @@ const projects: Project[] = [
     name: "Calculator",
     description:
       "Simple. Powerful. Fast. All you need to do your calculations.",
-    imageUrl: "https://picsum.photos/200/300",
+    imageUrl: "/images/projects/calculator.png",
     technologies: ["javascript", "html", "css", "react"],
-    projectUrl: "#",
-    codeUrl: "#",
+    projectUrl: "https://calculator-eight-blond-11.vercel.app",
+    codeUrl: "https://github.com/quibylix/calculator",
   },
 ];
 
